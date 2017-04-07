@@ -154,6 +154,7 @@ function draw() {
 
 // play actual game
 function playGame() {
+  whiteSquares.length = 0;
   scoreContainer.classList.add('hidden');
   clearInterval(intervalLookup);
   draw();
