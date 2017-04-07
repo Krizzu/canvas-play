@@ -15,9 +15,24 @@
 			display: block;
 		}
 
-		h2 {
+		h2,h3,h4 {
 			text-align: center;
 			margin-bottom: 2em;
+		}
+
+		button {
+			border-radius: 5px;
+
+			font-size: 1.2em;
+			outline: 0;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+		}
+
+		.hidden {
+			display: none;
 		}
 	</style>
 
@@ -25,6 +40,15 @@
 <body>	
 
 	<h2>Fun with canvas!</h2>
+
+	<h3>Stop, when number of white squares is equal to: <span id='number'></span></h3>
+	<button id='stopper'>Stop</button>
+
+	<div id='score-container' class='hidden'>
+		<h3 id='score'></h3>
+		<button id='again'>Play again</button>
+	</div>
+
 	
 	<canvas id='canvas' width="500px" height="400px" >
 		<h2>Sorry, your browser does not support canvas! :(</h2>
